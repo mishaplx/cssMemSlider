@@ -119,16 +119,20 @@ img {
 .slider-change {
   display: inline-block;
   height: 10px;
-  width: 10px;
+  width: 20px;
+  transform: skew(20deg);
   background-color: white;
 }
 .slider-change:hover{
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
+    height: 15px;
+  width: 25px;
+  transform: skew(20deg);
+    
     background-color: rgb(194, 194, 194);
 }
 .description{
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
