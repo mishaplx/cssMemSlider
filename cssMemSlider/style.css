@@ -8,6 +8,8 @@
 
 body {
   background-color: rgb(58, 58, 58);
+  color: white;
+  font-size: 20px;
 }
 
 img {
@@ -38,12 +40,54 @@ img {
   margin: 0px;
   padding: 0px;
 }
-
+.title-text{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 0;
+    transition: left ease 1s;
+}
+.slider-text{
+    opacity: 0;
+    
+   
+}
 #slider-img1:target ~ .image-block {
   left: 0px;
 }
-#slider-img1:target ~ .button-bullet > .slider-change:nth-child(1):visited {
+#slider-img1:target ~ .description > .button-bullet > .slider-change:nth-child(1):visited {
   background-color: rgb(173, 238, 130);
+}
+
+
+#slider-img1:target ~ .description > .title-text > .slider-text:nth-child(1){
+    opacity: 1;
+}
+
+
+
+#slider-img2:target ~ .description > .title-text{
+    left: -125px;
+}
+#slider-img2:target ~ .description > .title-text > .slider-text:nth-child(2){
+    opacity: 1;
+    
+}
+
+
+#slider-img3:target ~ .description > .title-text{
+    left: -250px;
+}
+#slider-img3:target ~ .description > .title-text > .slider-text:nth-child(3){
+    opacity: 1;
+    
+}
+
+#slider-img4:target ~ .description > .title-text{
+    left: -375px;
+}
+#slider-img4:target ~ .description > .title-text > .slider-text:nth-child(4){
+    opacity: 1;
 }
 
 
@@ -51,7 +95,7 @@ img {
 #slider-img2:target ~ .image-block {
   left: -700px;
 }
-#slider-img2:target ~ .button-bullet > .slider-change:nth-child(2):visited {
+#slider-img2:target ~ .description > .button-bullet > .slider-change:nth-child(2):visited {
     background-color: rgb(173, 238, 130);
 }
 
@@ -60,7 +104,7 @@ img {
 #slider-img3:target ~ .image-block {
   left: -1400px;
 }
-#slider-img3:target ~ .button-bullet > .slider-change:nth-child(3):visited {
+#slider-img3:target ~ .description > .button-bullet > .slider-change:nth-child(3):visited {
     background-color: rgb(173, 238, 130);
 }
 
@@ -69,7 +113,7 @@ img {
     left: -2100px;
   }
   
-  #slider-img4:target ~ .button-bullet > .slider-change:nth-child(4):visited {
+  #slider-img4:target ~ .description > .button-bullet > .slider-change:nth-child(4):visited {
       background-color: rgb(173, 238, 130);
   }
 .slider-change {
@@ -83,4 +127,8 @@ img {
     width: 12px;
     border-radius: 50%;
     background-color: rgb(194, 194, 194);
+}
+.description{
+    display: flex;
+    justify-content: space-between;
 }
