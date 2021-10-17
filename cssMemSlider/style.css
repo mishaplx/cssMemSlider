@@ -1,5 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    bottom: 0;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(58, 58, 58);
+}
+
+img {
+  width: 700px;
+  height: 500px;
+}
+
+
+.container-slider {
+  width: 700px;
+  margin: 100px auto;
+  text-align: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.image-block {
+  width: 2800px;
+  background-color: white;
+  height: 460px;
+  position: relative;
+  margin-bottom: 50px;
+  transition: left ease 1s;
+}
+
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+#slider-img1:target ~ .image-block {
+  left: 0px;
+}
+#slider-img1:target ~ .button-bullet > .slider-change:nth-child(1):visited {
+  background-color: rgb(173, 238, 130);
+}
+
+
+
+#slider-img2:target ~ .image-block {
+  left: -700px;
+}
+#slider-img2:target ~ .button-bullet > .slider-change:nth-child(2):visited {
+    background-color: rgb(173, 238, 130);
+}
+
+
+
+#slider-img3:target ~ .image-block {
+  left: -1400px;
+}
+#slider-img3:target ~ .button-bullet > .slider-change:nth-child(3):visited {
+    background-color: rgb(173, 238, 130);
+}
+
+
+#slider-img4:target ~ .image-block {
+    left: -2100px;
+  }
+  
+  #slider-img4:target ~ .button-bullet > .slider-change:nth-child(4):visited {
+      background-color: rgb(173, 238, 130);
+  }
+.slider-change {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+}
+.slider-change:hover{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(194, 194, 194);
 }

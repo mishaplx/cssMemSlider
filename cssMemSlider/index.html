@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./normalize.css" />
     <title>cssMemSlider</title>
-</head>
-<body>
-    <div class="container"></div>
+  </head>
+  <body>
+    <div class="container-slider">
+      <span id="slider-img1"></span>
+      <span id="slider-img2"></span>
+      <span id="slider-img3"></span>
+      <span id="slider-img4"></span>
+      <div class="image-block">
+        <img src="./images/img1.webp" alt="img" class="slider-image" />
+        <img src="./images/img2.jpg" alt="img" class="slider-image" />
+        <img src="./images/img3.jpg" alt="img" class="slider-image" />
+        <img src="./images/img4.jpg" alt="img" class="slider-image" />
+      </div>
 
-
-    <script src="./index.js"></script>
-</body>
+      <div class="button-bullet">
+        <a href="#slider-img1" class="slider-change"></a>
+        <a href="#slider-img2" class="slider-change"></a>
+        <a href="#slider-img3" class="slider-change"></a>
+        <a href="#slider-img4" class="slider-change"></a>
+      </div>
+    </div>
+  </body>
 </html>
