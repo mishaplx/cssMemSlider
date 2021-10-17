@@ -63,7 +63,9 @@ img {
 #slider-img1:target ~ .description > .title-text > .slider-text:nth-child(1){
     opacity: 1;
 }
-
+#slider-img1:target ~ .description > .title-text{
+    left: 0px;
+}
 
 
 #slider-img2:target ~ .description > .title-text{
@@ -121,6 +123,7 @@ img {
   height: 10px;
   width: 20px;
   transform: skew(20deg);
+ 
   background-color: white;
 }
 .slider-change:hover{
@@ -130,9 +133,27 @@ img {
     
     background-color: rgb(194, 194, 194);
 }
+.slider-change:active{
+    height: 15px;
+    width: 25px;
+    transform: skew(20deg);
+    background-color: rgb(52, 158, 108);
+}
 .description{
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .description{
+        flex-direction: column;
+    }
+    .title-text{
+        order: 1;
+    }
+    .button-bullet{
+        order: 0;
+    }
 }
